@@ -30,7 +30,7 @@ function getMatrix(m, o, d) {
 
 
 function save(url, store, k) {
-// cramming connect+insert in here is not optimal but let's not get into unnecessary detail
+
     return new Promise(function(resolve, reject) {
         MongoClient.connect(url, function(err, db) {
             if (err)
@@ -79,70 +79,3 @@ module.exports = Promise.all(dep.map(function(name) {
 
 
 
-/*var ted = dep.map(function(name){
-    
-    return new Promise(function(resolve,reject){
-
-    distance.departure_time(name);
-
-    distance.matrix(origins, destinations, function (err, distances) {
-   
-    if (err) {
-        return console.log('error');
-    }
-    if(!distances) {
-        return console.log('no distances');
-    }
-    if (distances.status == 'OK') {
-        for (var i=0; i < origins.length; i++) {
-            for (var j = 0; j < destinations.length; j++) {
-                var origin = distances.origin_addresses[i];
-                var destination = distances.destination_addresses[j];
-                if(distances.rows[0].elements[j].status == 'OK') {
-                    duration = distances.rows[i].elements[j].duration_in_traffic.value;
-                    myobj = new Object();
-                    myobj.destination = destination;
-                    myobj.departure_time = name;
-                    myobj.duration = duration;
-                    str = destination.replace(/[,\s]+/g, '');
-                    p = Promise.resolve(savemongo(myobj,str));
-                    
-                }else {
-                    console.log("err");
-                }
-            }
-        }
-    }
-    resolve();
-    });
-  
-    });
-});
-
-module.exports = Promise.all([ted,p]);
-
-/*Promise.all(ted,p).then(function(){ 
-
-
-
-
-
-});*/
-
-
-/*var savemongo = function(store , k) {
-
-MongoClient.connect(url, function(err, db) {
-        postobject(db, function() {
-            db.close();
-            
-        });
-});
-var postobject = function(db, callback) {
-db.collection(k).insert(store,function(err, results) {
-        callback();
-       
-    });
-};*/
-
-/*}*/
