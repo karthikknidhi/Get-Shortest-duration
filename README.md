@@ -7,7 +7,7 @@ The app works based on Google Maps API. It takes the origin and destination as a
 
 2.Valid Google Maps API key
 
-Steps :
+<strong>Steps :</strong>
 
 Install dependences -- // npm install
 
