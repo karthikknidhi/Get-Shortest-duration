@@ -3,11 +3,9 @@ The app works based on Google Maps API. It takes the origin and destination as a
 
 <strong>Pre-requisite:</strong>
 
-1.Install mongodb 
+1.Install Node and MongoDB 
 
-2.Start the mongodb server using the command "Mongod"
-
-3.Valid Google Maps API key
+2.Valid Google Maps API key
 
 Steps :
 
