@@ -12,4 +12,4 @@ The app is based on ES6 promises and runs on Asynchronous Javascript
 
 Install dependences -- // npm install
 
-Use the command  node time.js <originstring> < Destinationstrng>  to get the shortest duration // 
+Use the command  node time.js <Origin-string> < Destination-string>  to get the shortest duration // 
