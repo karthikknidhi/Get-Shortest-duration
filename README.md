@@ -1,4 +1,4 @@
-The app works based on Google Maps API. It takes the origin and destination as arguments and gives the shortest duration in traffic for the mode driving . The api checks for the shortest duration every 10 minutes upto 8 times and gives the one with the lowest duration
+The app works based on Google Maps API. It takes the origin and destination as arguments and gives the shortest duration in traffic for the mode driving . The api checks for the shortest duration in traffic every 10 minutes upto 8 times and gives the one with the lowest duration
 
 The app is based on ES6 promises and runs on Asynchronous Javascript
 
